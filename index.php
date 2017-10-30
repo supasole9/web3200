@@ -172,17 +172,19 @@
                     <div class="row" id="contact-switch">
                          <div class="col6m col12x">
                               <?php
-                                   $body = 'From my website';
+                                   $name = $_POST["name"];
+                                   $email = $_POST["email"];
+                                   $body = "From my website";
 
-                                   if($_POST['submit']){
-                                        mail ('ross.salanoa@dmail.dixie.edu', 'deez nuts', 'wassup', 'from: deez nuts');
+                                   if(isset($_GET["submit"])){
+                                        mail ("ross.salanoa@dmail.dixie.edu", "deez nuts", $body, "from: deez nuts");
                                    }
                               ?>
                               <form action="index.php" method="post">
                                    FULL NAME<br>
-                                   <input type="text" name="name" ><br>
+                                   <input type="text" name="name"><br>
                                    EMAIL<br>
-                                   <input type="email" name="email" ><br>
+                                   <input type="email" name="email"><br>
                               </form>
                          </div>
                          <div class="col6m col12x" id="contactP">
