@@ -5,7 +5,7 @@
                <nav>
                     <ul>
                          <li>
-                              <a href="#">HOME</a>
+                              <a href="./index.php">HOME</a>
                          </li>
                          <li class="dropdown">
                               <a href="./services.php">SERVICES</a>
@@ -26,10 +26,7 @@
                          <li class="dropdown">
                               <a href="./portfolio.php">PORTFOLIO</a>
                               <div class="dropdown-content hover-nav">
-                                   <a href="#">Websites</a>
-                                   <a href="#">Photography</a>
-                                   <a href="#">Graphic Design</a>
-                                   <a href="#">Branding</a>
+                                   <a href="./upload.php">Upload</a>
                               </div>
                          </li>
                          <li class="dropdown">
