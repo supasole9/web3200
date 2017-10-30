@@ -1,3 +1,13 @@
+<?php require 'header.php';?>
+<?php require 'menu.php';?>
+
+
+<form action="upload.php" method="post" enctype="multipart/form-data">
+    Select image to upload:
+    <input type="file" name="fileToUpload" id="fileToUpload">
+    <input type="submit" value="Upload Image" name="submit">
+</form>
+
 <?php
 $target_dir = "uploads/";
 $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
@@ -42,3 +52,4 @@ if ($uploadOk == 0) {
     }
 }
 ?>
+<?php require 'footer.php';?>
