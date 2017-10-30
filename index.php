@@ -171,6 +171,14 @@
                <form action="mail.php" method="post">
                     <div class="row" id="contact-switch">
                          <div class="col6m col12x">
+                              <?php
+                                   $name = $_POST['name'];
+                                   $email = $_POST['email'];
+                                   $body = 'From my website';
+                                   if($_POST['submit']){
+                                        mail ('ross.salanoa@dmail.dixie.edu', 'deez nuts', $body, 'from: deez nuts');
+                                   }
+                              ?>
                               <form action="index.php" method="post">
                                    FULL NAME<br>
                                    <input type="text" name="name" ><br>
@@ -203,12 +211,4 @@
 
           </div>
      </div>
-     <?php
-          $name = $_POST['name'];
-          $email = $_POST['email'];
-          $body = 'From my website';
-          if($_POST['submit']){
-               mail ('ross.salanoa@dmail.dixie.edu', 'deez nuts', $body, 'from: deez nuts');
-          }
-     ?>
 <?php require 'footer.php';?>
