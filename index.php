@@ -172,8 +172,6 @@
                     <div class="row" id="contact-switch">
                          <div class="col6m col12x">
                               <?php
-                                   $name = $_POST['name'];
-                                   $email = $_POST['email'];
                                    $body = 'From my website';
 
                                    if($_POST['submit']){
