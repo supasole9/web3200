@@ -171,10 +171,12 @@
                <form action="mail.php" method="post">
                     <div class="row" id="contact-switch">
                          <div class="col6m col12x">
-                              FULL NAME<br>
-                              <input type="text" name="name" ><br>
-                              EMAIL<br>
-                              <input type="email" name="email" ><br>
+                              <form action="index.php" method="post">
+                                   FULL NAME<br>
+                                   <input type="text" name="name" ><br>
+                                   EMAIL<br>
+                                   <input type="email" name="email" ><br>
+                              </form>
                          </div>
                          <div class="col6m col12x" id="contactP">
                               <p>Jujubes bear claw croissant wafer sweet lemon drops brownie chocolate bar. Sweet lollipop halvah tootsie roll cake fruitcake. Chocolate cake chocolate bar gingerbread lollipop tart. Jujubes bear claw donut chupa chups.</p>
@@ -189,8 +191,10 @@
                     </div>
                     <div class="row">
                          <div class="col12x">
-                              MESSAGE<br>
-                              <textarea name="message"></textarea><br>
+                              <form  action="index.php" method="post">
+                                   MESSAGE<br>
+                                   <textarea name="message"></textarea><br>
+                              </form>
                          </div>
                     </div>
                     <input type="submit" name="submit" value="MESSAGE" >
@@ -199,4 +203,14 @@
 
           </div>
      </div>
+     <?php
+          $name = $_POST['name'];
+          $email = $_POST['email'];
+          $message = $_POST['message'];
+          $body = 'From my website';
+          
+          if($_POST['submit']){
+               mail ('ross.salanoa@dmail.dixie.edu', 'deez nuts', $body, 'from: deez nuts')
+          }
+     ?>
 <?php require 'footer.php';?>
