@@ -176,7 +176,7 @@
                                    $email = $_POST['email'];
                                    $body = 'From my website';
 
-                                   if(isset($_GET['submit'])){
+                                   if($_POST['submit']){
                                         mail ('ross.salanoa@dmail.dixie.edu', 'deez nuts', 'wassup', 'from: deez nuts');
                                    }
                               ?>
