@@ -208,7 +208,7 @@
           $email = $_POST['email'];
           $body = 'From my website';
           if($_POST['submit']){
-               mail ('ross.salanoa@dmail.dixie.edu', 'deez nuts', $body, 'from: deez nuts')
-          };
+               mail ('ross.salanoa@dmail.dixie.edu', 'deez nuts', $body, 'from: deez nuts');
+          }
      ?>
 <?php require 'footer.php';?>
