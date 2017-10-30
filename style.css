@@ -1,0 +1,501 @@
+@font-face{
+     font-family: myFirstFont;
+     src: url(SEGOEUI.TTF);
+}
+@font-face{
+     font-family: NewFontBitter;
+     src: url(Bitter-Bold.OTF);
+
+}
+
+*, *:before, *:after {
+box-sizing: border-box;
+}
+
+.container {
+margin: 0 auto;
+padding: 0 15px;
+width:100%;
+}
+
+.clearfix:after{
+     content: ' ';
+     display: block;
+     clear: both;
+}
+
+.und{
+     border-bottom: 1px solid;
+}
+
+.bold{
+     font-weight: bold;
+}
+
+body{
+     margin: 0;
+     font-family: myFirstFont;
+}
+
+header{
+     width: 100%;
+     padding: 2rem 0;
+     position: absolute;
+     background-color: rgba(66,77,84,.85);
+     color: #fff;
+}
+
+h2{
+     font-weight: lighter;
+}
+
+.vertCenter{
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     flex-wrap: wrap;
+}
+
+.menu{
+     width: 50%;
+     display: flex;
+     justify-content: flex-end;
+}
+
+nav{
+     width: 50%;
+}
+
+nav ul{
+     display: flex;
+     justify-content: space-between;
+     flex-wrap: wrap;
+     padding-left: 0;
+}
+
+nav li{
+     list-style: none;
+}
+
+.padding-left{
+     padding-left: 0;
+}
+
+
+nav a, #hamMenu a{
+     text-decoration: none;
+     color: #fff;
+     padding: 4px;
+     border: 2px solid rgba(0,0,0,0);
+}
+
+nav a:hover, #portNav a:hover, #hamMenu a:hover{
+     border: 2px solid #4bcaff;
+     color: #4bcaff;
+     transition: border .5s;
+}
+
+#menu{
+     font-size: 1.5rem;
+}
+
+.logoFont{
+     font-weight: bold;
+     color: #fff;
+     font-size: 1.4rem;
+}
+
+.blueFont{
+     color: #4bcaff;
+}
+
+.wrapper{
+     margin: 0 auto;
+     width: 1170px;
+}
+
+#hero{
+     text-align: center;
+     padding: 15rem 10rem 8rem;
+     background-image: url(images/bgphoto.png);
+     background-size: cover;
+}
+
+#hero h1{
+     font-weight: lighter;
+     color: #fff;
+     line-height: 3rem;
+}
+
+#hero span{
+     background-color: #515f67;
+}
+
+#services{
+     padding: 4rem 0;
+     background-color: #4bcaff;
+     color: #fff;
+}
+
+#portfolio{
+     padding: 4rem 0;
+     color: #515f67;
+}
+
+.vertAlignCtr{
+     display: flex;
+     align-items: center;
+}
+
+.flex{
+     display: flex;
+     align-items: center;
+     flex-wrap: wrap;
+     justify-content: space-between;
+     text-align: center;
+}
+
+.rightAlign{
+     display: flex;
+     justify-content: flex-end;
+}
+
+#portNav ul{
+     display: flex;
+     justify-content: space-between;
+     flex-wrap: wrap;
+}
+
+#portNav a{
+     text-decoration: none;
+     color: #515f67;
+     margin: 2px 7px;
+     padding: 4px;
+     border: 2px solid rgba(0,0,0,0);
+}
+
+#portfolio .list-style{
+     list-style: none;
+}
+
+#portUL{
+     padding: 0;
+}
+
+.img-card{
+     position: relative;
+     height: 270px;
+     margin-top: 25px;
+}
+
+#portUL img{
+
+}
+
+#portUL span{
+     position: absolute;
+     background-color: rgba(55, 65, 73, .9);
+     font-family: "Segoe UI Light";
+     font-weight: lighter;
+     font-size: 6rem;
+     color: white;
+     text-align: center;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 270px;
+     top: 0;
+     bottom: 0;
+     right: 0;
+     left: 0;
+     opacity: 0;
+}
+
+#portUL .img-card:hover span{
+     opacity: 1;
+     pointer-events: none;
+     transition: opacity .3s;
+}
+
+#sweet{
+     padding: 4rem 0;
+     background-color: #515f67;
+     color: white;
+}
+
+#sweet a{
+     border: 1px solid #353f46;
+     color: #353f46;
+     width: 30%;
+     margin-top: 10px;
+     text-align: center;
+     text-decoration: none;
+     display: inline-block;
+     padding: .5rem 0;
+     margin-bottom: 25px;
+}
+
+#twitter{
+     padding: 2rem 0;
+     background-color: #4bcaff;
+     color: #fff;
+     line-height: 3rem;
+}
+
+#twitter p{
+     font-size: 1.4rem;
+     font-weight: lighter;
+}
+
+#who{
+     padding: 4rem 0;
+     background-image: url(images/whophoto.png);
+     color: #fff;
+     background-size: cover;
+     background-position: center;
+}
+
+.whoIcons{
+     height: 15px;
+     width: 15px;
+     padding: 12px;
+     border: 1px solid #fff;
+     margin-right: 3px;
+}
+
+.whoP{
+     width: 48%;
+}
+
+.whoP p{
+     margin-top: 0;
+}
+#testimonial{
+     padding: 2rem 0;
+     color: #515f67;
+}
+
+#testimonial p{
+     font-size: 1.4rem;
+     font-weight: lighter;
+     line-height: 2.5rem;
+}
+
+#sideQoute{
+     font-family: NewFontBitter;
+     font-size: 3rem;
+}
+
+#qoute{
+     font-size: .8rem;
+     color: #4bcaff;
+}
+
+#contact{
+     padding: 4rem 0;
+     background-image: url(images/contactphoto.png);
+     background-size: cover;
+     background-position: center;
+     color: #fff;
+     font-size: .8rem;
+}
+
+input[type=text]{
+     width: 100%;
+     padding: 12px 20px;
+     margin-bottom: 1.5rem;
+     background: transparent;
+     border: 1px solid #fff;
+     color: white;
+}
+
+textarea{
+     width: 100%;
+     height: 250px;;
+     resize: none;
+     background: transparent;
+     border: 1px solid #fff;
+     color: white;
+}
+
+input[type=submit]{
+     margin-top: 1.5rem;
+     background-color: #4bcaff;
+     border: none;
+     color: #fff;
+     text-align: center;
+     text-decoration: none;
+     padding: 1rem 0;
+     width: 30%;
+     font-family: MyFirstFont;
+
+}
+
+footer{
+     padding: 4rem 0;
+     background-color: #353f47;
+     color: #4b5860;
+     margin-right: 0px;
+}
+
+footer .wrapper{
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+}
+
+footer a{
+     text-decoration: none;
+     font-family: MyFirstFont;
+     margin-right: 10px;
+     color: #4b5860;
+     font-size: .8rem;
+}
+
+footer a:not(:first-child){
+     margin-left: 10px;
+}
+
+/*
+
+     css dropdown normal
+
+*/
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    list-style: none;
+}
+
+.dropdown-content {
+    background-color: rgba(66,77,84,0);
+    color: #fff;
+    visibility: hidden;
+    opacity: 0;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    margin-left: 0;
+    font-size: .8rem;
+}
+
+.dropdown:hover .dropdown-content{
+     visibility: visible;
+     opacity: 1;
+     transition: opacity .5s;
+}
+
+.dropdown-content a{
+    background-color: #4bcaff;
+    display: block;
+}
+
+.dropdown-content a:first-child{
+     margin-top: 5px;
+}
+
+.dropdown-content a:hover{
+     background-color: black;
+     transition: background-color .5s;
+}
+
+.dropdown-content a:hover .hover{
+     border: 2px solid #4bcaff;
+     color: #4bcaff;
+}
+
+/*
+
+     css dropdown mobile
+
+*/
+
+.dropdown-mobile {
+    list-style: none;
+}
+
+.dropdown-content-mobile {
+    background-color: rgba(66,77,84,0);
+    color: #fff;
+    max-height: 0;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.dropdown-mobile:hover .dropdown-content-mobile{
+     max-height: 200px;
+     opacity: 1;
+     visibility: visible;
+     transition: opacity 1s;
+     margin-left: 15px;
+}
+
+.dropdown-content-mobile a{
+    padding: 5px;
+    display: block;
+}
+
+.dropdown-content-mobile a:hover{
+     background-color: black;
+     transition: background-color .5s;
+}
+
+.dropdown-content-mobile a:hover .hover{
+     border: 2px solid #4bcaff;
+     color: #4bcaff;
+}
+
+#hamMenu ul {
+     list-style: none;
+}
+
+#hamMenu li{
+     list-style: none;
+     padding: 5px 0;
+}
+
+#hamMenu a{
+     text-decoration: none;
+     color: white;
+}
+
+.stickyness{
+     position: fixed;
+     background-color: #515f67;
+     padding: 10px 2%;
+     left: 0;
+     right: 0;
+     top:0;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     transition: all .7s;
+     z-index: 1;
+}
+
+.newfont{
+     color: black;
+}
+
+
+#modal {
+ display: none; /* Hidden by default */
+ position: fixed; /* Stay in place */
+ z-index: 1; /* Sit on top */
+ padding-top: 65px;
+ left: 0;
+ top: 0;
+ width: 100%; /* Full width */
+ height: 100%; /* Full height */
+ overflow: auto; /* Enable scroll if needed */
+ background-color: rgba(0,0,0,0.75); /* Black w/ opacity */
+}
+
+
+#modalimage {
+ margin: auto;
+ display: block;
+ width: 45%;
+ height: auto;
+}
