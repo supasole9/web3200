@@ -191,10 +191,10 @@
                     </div>
                     <div class="row">
                          <div class="col12x">
-                              <form  action="index.php" method="post">
+                              <!-- <form  action="index.php" method="post">
                                    MESSAGE<br>
                                    <textarea name="message"></textarea><br>
-                              </form>
+                              </form> -->
                          </div>
                     </div>
                     <input type="submit" name="submit" value="MESSAGE" >
@@ -208,7 +208,6 @@
           $email = $_POST['email'];
           $message = $_POST['message'];
           $body = 'From my website';
-          
           if($_POST['submit']){
                mail ('ross.salanoa@dmail.dixie.edu', 'deez nuts', $body, 'from: deez nuts')
           }
