@@ -1,4 +1,5 @@
 <?php require 'header.php';?>
+<?php require 'menu.php';?>
      <div id="hero">
           <h1><span>"LOREM IPSUM DOLOR SIT AMET, CON <br>ADIPISCING ELIAT, CURABITUR NEC LACUS LA PURUS"</span></h1>
      </div>
@@ -173,7 +174,7 @@
                               FULL NAME<br>
                               <input type="text" name="name" ><br>
                               EMAIL<br>
-                              <input type="text" name="email" ><br>
+                              <input type="email" name="email" ><br>
                          </div>
                          <div class="col6m col12x" id="contactP">
                               <p>Jujubes bear claw croissant wafer sweet lemon drops brownie chocolate bar. Sweet lollipop halvah tootsie roll cake fruitcake. Chocolate cake chocolate bar gingerbread lollipop tart. Jujubes bear claw donut chupa chups.</p>
